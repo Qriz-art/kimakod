@@ -1,0 +1,19 @@
+{
+  "name": "Kimakod — Penerjemah Tulisan ke Kode Huruf Unik",
+  "short_name": "Kimakod",
+  "description": "Penerjemah tulisan ke kode huruf unik: huruf jadi angka berpangkat, angka jadi Romawi per digit, • pemisah huruf, | pemisah kata.",
+  "lang": "id",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#07090f",
+  "theme_color": "#07090f",
+  "icons": [
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
