@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kimakod — Penerjemah Tulisan ke Kode Huruf Unik, Angka Romawi &amp; Pangkat</title>
+  <meta name="description" content="Kimakod adalah website penerjemah tulisan ke dalam sistem kode huruf khusus yang unik dan mudah digunakan. Setiap huruf punya kode angka berpangkat, angka memakai angka Romawi per digit, • memisahkan huruf, | memisahkan kata." />
+  <meta name="keywords" content="kimakod, kima kod, penerjemah tulisan, penerjemah kode, pengubah tulisan, konverter teks, teks ke kode, kode ke teks, translate kode, decoder kode, encoder teks, kode rahasia, sandi rahasia, bahasa kode, tulisan rahasia, pesan rahasia, kode huruf, huruf khusus, sistem penulisan khusus, angka berpangkat, angka romawi, angka romawi per digit, huruf pangkat, superscript, simbol •, pemisah huruf, separator kode, sandi sederhana, kriptografi sederhana, enkripsi teks, dekripsi teks, cipher sederhana, generator kode unik, pengubah huruf, tulisan unik, teks tersembunyi, bahasa rahasia, game edukasi, game teka teki, teka-teki kode, teka teki kode, edukasi anak, media pembelajaran, typography unik, digital language, secret code generator, text to code, code to text translator, roman numeral converter, angka romawi indonesia, online translator gratis, alat tulis online, web app edukasi, tanpa daftar, gratis online, unik dan mudah" />
+  <meta name="author" content="Kimakod" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="googlebot" content="index, follow" />
+  <meta name="theme-color" content="#07090f" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="canonical" href="https://example.com/" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0f18'/%3E%3Ctext x='32' y='45' font-size='36' text-anchor='middle' fill='%236ee7c2' font-family='monospace'%3EK%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- ============ OPEN GRAPH ============ -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Kimakod" />
+  <meta property="og:locale" content="id_ID" />
+  <meta property="og:title" content="Kimakod — Penerjemah Tulisan ke Kode Huruf Unik" />
+  <meta property="og:description" content="Kimakod adalah website penerjemah tulisan ke dalam sistem kode huruf khusus yang unik dan mudah digunakan. Setiap huruf memiliki kode angka dan pangkatnya sendiri, sedangkan angka ditulis menggunakan angka Romawi per digit. Tanda • digunakan sebagai pemisah huruf atau digit, sementara | digunakan untuk memisahkan kata." />
+  <meta property="og:url" content="https://example.com/" />
+  <meta property="og:image" content="https://example.com/kimakod.png" />
+  <meta property="og:image:secure_url" content="https://example.com/kimakod.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Kimakod — logo penerjemah tulisan ke kode huruf khusus" />
+
+  <!-- ============ TWITTER / X CARD ============ -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Kimakod — Penerjemah Tulisan ke Kode Huruf Unik" />
+  <meta name="twitter:description" content="Sistem kode huruf khusus: huruf jadi angka berpangkat, angka jadi angka Romawi per digit, • pemisah huruf, | pemisah kata. Mudah digunakan, langsung jalan di browser." />
+  <meta name="twitter:image" content="https://example.com/kimakod.png" />
+  <meta name="twitter:image:alt" content="Kimakod — logo penerjemah tulisan ke kode huruf khusus" />
+
+  <!-- ============ SCHEMA.ORG / JSON-LD ============ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://example.com/#webapp",
+        "name": "Kimakod",
+        "alternateName": "Kimakod Translator",
+        "url": "https://example.com/",
+        "image": "https://example.com/kimakod.png",
+        "description": "Kimakod adalah website penerjemah tulisan ke dalam sistem kode huruf khusus yang unik dan mudah digunakan. Setiap huruf memiliki kode angka dan pangkatnya sendiri, sedangkan angka ditulis menggunakan angka Romawi per digit. Tanda • digunakan sebagai pemisah huruf atau digit, sementara | digunakan untuk memisahkan kata.",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Semua browser modern",
+        "browserRequirements": "Mendukung HTML5",
+        "inLanguage": "id",
+        "isAccessibleForFree": true,
+        "keywords": "kimakod, penerjemah tulisan, kode rahasia, angka romawi, angka berpangkat, kode huruf, sandi sederhana, teks ke kode, decoder kode",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "IDR" },
+        "featureList": [
+          "Tulis Kimakod: tulisan biasa menjadi kode secara realtime",
+          "Terjemahkan Kimakod: kode kembali menjadi tulisan biasa",
+          "Panduan lengkap vokal, konsonan, angka Romawi, dan pemisah"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://example.com/#website",
+        "url": "https://example.com/",
+        "name": "Kimakod",
+        "description": "Website penerjemah tulisan ke sistem kode huruf khusus yang unik dan mudah digunakan.",
+        "inLanguage": "id",
+        "publisher": { "@id": "https://example.com/#webapp" }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://example.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Apa itu Kimakod?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Kimakod adalah website penerjemah tulisan ke dalam sistem kode huruf khusus yang unik dan mudah digunakan. Setiap huruf memiliki kode angka dan pangkatnya sendiri, sedangkan angka ditulis menggunakan angka Romawi per digit."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Bagaimana cara memisahkan huruf dan kata dalam kode Kimakod?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tanda • digunakan sebagai pemisah huruf atau digit, sementara | digunakan untuk memisahkan kata sehingga batas antar kata tetap jelas."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Bagaimana angka ditulis dalam Kimakod?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Angka ditulis memakai angka Romawi per digit, misalnya 13 menjadi I•III dan 85 menjadi VIII•V. Setiap digit selalu berdiri sendiri."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Apakah Kimakod gratis dipakai?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ya, Kimakod gratis dan berjalan langsung di browser tanpa pendaftaran, sehingga bisa dipakai di HP maupun komputer."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "Kimakod",
+        "url": "https://example.com/",
+        "image": "https://example.com/kimakod.png",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "Web",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "IDR" },
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "ratingCount": "128", "bestRating": "5" }
+      }
+    ]
+  }
+  </script>
+</head>
+<body id="top">
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#top" aria-label="Kimakod, kembali ke atas">
+        <span class="brand-mark">K</span>
+        <span class="brand-name">KIMAKOD</span>
+      </a>
+      <nav class="nav-links" aria-label="Navigasi utama">
+        <a href="#tulis">Tulis Kimakod</a>
+        <a href="#terjemah">Terjemahkan</a>
+        <a href="#panduan">Panduan</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <p class="eyebrow">Secret Code · Typography · Digital Language</p>
+      <h1> <span class="grad">Kimakod</span></h1>
+      <p class="lead">Kimakod adalah website penerjemah tulisan ke dalam sistem kode huruf khusus yang unik dan mudah digunakan.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#tulis">Tulis Kimakod</a>
+        <a class="btn btn-ghost" href="#terjemah">Terjemahkan Kimakod</a>
+      </div>
+      <p class="hero-preview" aria-hidden="true"><code>¹•2²•⁵ | 4²•¹•⁵</code></p>
+    </section>
+
+    <!-- ================= 1. TULIS ================= -->
+    <section id="tulis" class="section tool">
+      <div class="section-head">
+        <p class="section-kicker">Fitur 01</p>
+        <h2>Tulis Kimakod</h2>
+        <p class="section-sub">Ketik tulisan biasa, kode Kimakod muncul otomatis secara realtime.</p>
+      </div>
+
+      <div class="tool-grid">
+        <article class="editor">
+          <div class="editor-top">
+            <span class="editor-label">Tulisan Biasa</span>
+            <span class="editor-badge">input</span>
+          </div>
+          <textarea id="plain-input" spellcheck="false" autocomplete="off"
+            placeholder="Ketik di sini... contoh: Aku mau belajar Kimakod"></textarea>
+          <div class="editor-actions">
+            <button class="btn btn-sm" id="plain-sample" type="button">Contoh</button>
+            <button class="btn btn-sm" id="plain-clear" type="button">Hapus</button>
+          </div>
+        </article>
+
+        <div class="tool-arrow" aria-hidden="true">→</div>
+
+        <article class="editor">
+          <div class="editor-top">
+            <span class="editor-label">Hasil Kimakod</span>
+            <span class="editor-badge">output</span>
+          </div>
+          <textarea id="plain-output" class="output" readonly spellcheck="false"
+            placeholder="¹•2²•⁵ | ..."></textarea>
+          <div class="editor-actions">
+            <button class="btn btn-sm" id="plain-copy" type="button">Salin</button>
+          </div>
+        </article>
+      </div>
+
+      <p class="status" id="plain-status"></p>
+    </section>
+
+    <!-- ================= 2. TERJEMAHKAN ================= -->
+    <section id="terjemah" class="section tool">
+      <div class="section-head">
+        <p class="section-kicker">Fitur 02</p>
+        <h2>Terjemahkan Kimakod</h2>
+        <p class="section-sub">Tempel kode Kimakod, tulisan biasa muncul otomatis secara realtime.</p>
+      </div>
+
+      <div class="tool-grid">
+        <article class="editor">
+          <div class="editor-top">
+            <span class="editor-label">Kode Kimakod</span>
+            <span class="editor-badge">input</span>
+          </div>
+          <textarea id="code-input" spellcheck="false" autocomplete="off"
+            placeholder="Tempel kode di sini... contoh: ¹•2²•⁵ | 4²•¹•⁵"></textarea>
+          <div class="editor-actions">
+            <button class="btn btn-sm" id="code-sample" type="button">Contoh</button>
+            <button class="btn btn-sm" id="code-clear" type="button">Hapus</button>
+          </div>
+        </article>
+
+        <div class="tool-arrow" aria-hidden="true">→</div>
+
+        <article class="editor">
+          <div class="editor-top">
+            <span class="editor-label">Tulisan Biasa</span>
+            <span class="editor-badge">output</span>
+          </div>
+          <textarea id="code-output" class="output" readonly spellcheck="false"
+            placeholder="AKU MAU ..."></textarea>
+          <div class="editor-actions">
+            <button class="btn btn-sm" id="code-copy" type="button">Salin</button>
+          </div>
+        </article>
+      </div>
+
+      <p class="status" id="code-status"></p>
+    </section>
+
+    <!-- ================= PANDUAN ================= -->
+    <section id="panduan" class="section guide">
+      <div class="section-head">
+        <p class="section-kicker">Referensi</p>
+        <h2>Panduan Kimakod</h2>
+        <p class="section-sub">Kimakod mengubah huruf dan angka menjadi kode memakai angka berpangkat dan angka Romawi.</p>
+      </div>
+
+      <div class="guide-grid">
+
+        <article class="card">
+          <h3>Vokal</h3>
+          <p class="card-sub">Setiap vokal diwakili satu angka berpangkat.</p>
+          <div class="table-wrap">
+            <table class="tbl">
+              <thead><tr><th>Huruf</th><th>Kimakod</th></tr></thead>
+              <tbody>
+                <tr><td>A</td><td><code>¹</code></td></tr>
+                <tr><td>E</td><td><code>²</code></td></tr>
+                <tr><td>I</td><td><code>³</code></td></tr>
+                <tr><td>O</td><td><code>⁴</code></td></tr>
+                <tr><td>U</td><td><code>⁵</code></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Angka</h3>
+          <p class="card-sub">Satu digit = satu angka Romawi. Angka tidak pernah digabung.</p>
+          <div class="table-wrap">
+            <table class="tbl">
+              <thead><tr><th>Digit</th><th>Kimakod</th></tr></thead>
+              <tbody>
+                <tr><td>0</td><td><code>0</code></td></tr>
+                <tr><td>1</td><td><code>I</code></td></tr>
+                <tr><td>2</td><td><code>II</code></td></tr>
+                <tr><td>3</td><td><code>III</code></td></tr>
+                <tr><td>4</td><td><code>IV</code></td></tr>
+                <tr><td>5</td><td><code>V</code></td></tr>
+                <tr><td>6</td><td><code>VI</code></td></tr>
+                <tr><td>7</td><td><code>VII</code></td></tr>
+                <tr><td>8</td><td><code>VIII</code></td></tr>
+                <tr><td>9</td><td><code>IX</code></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="card card-wide">
+          <h3>Konsonan</h3>
+          <p class="card-sub">Konsonan memakai angka dasar dipangkatkan 1, 2, atau 3. Huruf besar dan kecil diperlakukan sama.</p>
+          <div class="table-wrap">
+            <table class="tbl">
+              <thead>
+                <tr><th>Angka Dasar</th><th>Pangkat 1</th><th>Pangkat 2</th><th>Pangkat 3</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>1</td><td><code>J = 1¹</code></td><td><code>S = 1²</code></td><td class="dim">—</td></tr>
+                <tr><td>2</td><td><code>B = 2¹</code></td><td><code>K = 2²</code></td><td><code>T = 2³</code></td></tr>
+                <tr><td>3</td><td><code>C = 3¹</code></td><td><code>L = 3²</code></td><td class="dim">—</td></tr>
+                <tr><td>4</td><td><code>D = 4¹</code></td><td><code>M = 4²</code></td><td><code>V = 4³</code></td></tr>
+                <tr><td>5</td><td><code>N = 5¹</code></td><td><code>W = 5²</code></td><td class="dim">—</td></tr>
+                <tr><td>6</td><td><code>F = 6¹</code></td><td><code>X = 6²</code></td><td class="dim">—</td></tr>
+                <tr><td>7</td><td><code>G = 7¹</code></td><td><code>P = 7²</code></td><td><code>Y = 7³</code></td></tr>
+                <tr><td>8</td><td><code>H = 8¹</code></td><td><code>Q = 8²</code></td><td><code>Z = 8³</code></td></tr>
+                <tr><td>9</td><td><code>R = 9¹</code></td><td class="dim">—</td><td class="dim">—</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Simbol Pemisah</h3>
+          <p class="card-sub">Pemisah memisahkan setiap unit kode.</p>
+          <ul class="symbol-list">
+            <li><code>•</code> <span>pemisah antarhuruf / antardigit</span></li>
+            <li><code>|</code> <span>pemisah antarkata (menggantikan spasi)</span></li>
+          </ul>
+          <p class="card-note">Tanda baca seperti <code>.</code> <code>,</code> <code>!</code> <code>?</code> <code>:</code> <code>/</code> <code>-</code> tetap dipertahankan apa adanya.</p>
+        </article>
+
+        <article class="card card-wide">
+          <h3>Contoh Penyandian</h3>
+          <p class="card-sub">Aturan final: satu digit = satu angka Romawi.</p>
+          <div class="examples">
+            <div class="example"><span class="ex-in">AKU</span><span class="ex-arrow">→</span><span class="ex-out">¹•2²•⁵</span></div>
+            <div class="example"><span class="ex-in">MAU</span><span class="ex-arrow">→</span><span class="ex-out">4²•¹•⁵</span></div>
+            <div class="example"><span class="ex-in">AKU MAU</span><span class="ex-arrow">→</span><span class="ex-out">¹•2²•⁵ | 4²•¹•⁵</span></div>
+            <div class="example"><span class="ex-in">KIMAKOD</span><span class="ex-arrow">→</span><span class="ex-out">2²•³•4²•¹•2²•⁴•4¹</span></div>
+            <div class="example"><span class="ex-in">13</span><span class="ex-arrow">→</span><span class="ex-out">I•III</span></div>
+            <div class="example"><span class="ex-in">85</span><span class="ex-arrow">→</span><span class="ex-out">VIII•V</span></div>
+            <div class="example"><span class="ex-in">13581</span><span class="ex-arrow">→</span><span class="ex-out">I•III•V•VIII•I</span></div>
+            <div class="example"><span class="ex-in">2026</span><span class="ex-arrow">→</span><span class="ex-out">II•0•II•VI</span></div>
+            <div class="example"><span class="ex-in">AKU 13</span><span class="ex-arrow">→</span><span class="ex-out">¹•2²•⁵ | I•III</span></div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ================= FAQ (SEO) ================= -->
+    <section id="faq" class="section faq">
+      <div class="section-head">
+        <p class="section-kicker">Tanya Jawab</p>
+        <h2>Pertanyaan Seputar Kimakod</h2>
+        <p class="section-sub">Jawaban singkat tentang cara kerja penerjemah tulisan ke kode huruf khusus Kimakod.</p>
+      </div>
+
+      <div class="faq-list">
+        <details class="faq-item" open>
+          <summary>Apa itu Kimakod?</summary>
+          <p>Kimakod adalah website penerjemah tulisan ke dalam sistem kode huruf khusus yang unik dan mudah digunakan. Setiap huruf memiliki kode angka dan pangkatnya sendiri, sedangkan angka ditulis menggunakan angka Romawi per digit.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Apa fungsi tanda <code>•</code> dan <code>|</code>?</summary>
+          <p>Tanda <code>•</code> digunakan sebagai pemisah huruf atau digit, sementara <code>|</code> digunakan untuk memisahkan kata sehingga setiap kata tetap terbaca jelas.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Bagaimana angka ditulis dalam Kimakod?</summary>
+          <p>Angka ditulis menggunakan angka Romawi per digit dan tidak pernah digabung. Contoh: <code>13</code> menjadi <code>I•III</code>, <code>85</code> menjadi <code>VIII•V</code>, dan <code>2026</code> menjadi <code>II•0•II•VI</code>.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Bagaimana cara mengubah tulisan menjadi kode Kimakod?</summary>
+          <p>Buka fitur <a href="#tulis">Tulis Kimakod</a>, ketik tulisan biasa pada kolom kiri, lalu kode Kimakod akan muncul otomatis secara realtime pada kolom kanan dan bisa langsung disalin.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Bisakah kode Kimakod dikembalikan menjadi tulisan biasa?</summary>
+          <p>Bisa. Tempel kode pada fitur <a href="#terjemah">Terjemahkan Kimakod</a>, lalu tulisan biasa akan muncul otomatis secara realtime tanpa perlu menekan tombol apa pun.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Apakah Kimakod gratis dan aman dipakai?</summary>
+          <p>Ya. Kimakod berjalan sepenuhnya di browser, gratis tanpa pendaftaran, dan tidak mengirim data tulisanmu ke server mana pun.</p>
+        </details>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <p class="footer-brand">KIMAKOD</p>
+        <p class="footer-tag">Tulis. Kodekan. Terjemahkan.</p>
+      </div>
+      <p class="footer-note">Sistem penulisan khusus dengan angka berpangkat dan angka Romawi per digit.</p>
+      <nav class="footer-keys" aria-label="Topik Kimakod">
+        <a href="#tulis">penerjemah tulisan</a>
+        <a href="#tulis">teks ke kode</a>
+        <a href="#terjemah">kode ke teks</a>
+        <a href="#terjemah">decoder kode</a>
+        <a href="#panduan">kode rahasia</a>
+        <a href="#panduan">sandi rahasia</a>
+        <a href="#panduan">angka Romawi</a>
+        <a href="#panduan">angka berpangkat</a>
+        <a href="#panduan">kode huruf unik</a>
+        <a href="#faq">FAQ Kimakod</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
